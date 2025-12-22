@@ -1,0 +1,103 @@
+body {
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+
+}
+
+
+#header{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    margin:auto;
+    padding: 10px;
+    height: 6vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+}
+
+
+#contentBody{
+    background-color: #7e8a7f;
+    color: white;
+    text-align: center;
+    height: 90vh;
+    margin: 0%;
+    padding: 10px;
+    
+}
+#checkerForm{
+    background-color: #ffffff;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    margin: auto;
+    margin-top: 20px;
+    gap: 10px;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    min-width: 200px;
+}
+/*for Checker form*/ 
+#checkerForm input[type="checkbox"] {
+    font-size: 16px;
+    padding: 5px;
+    cursor: pointer;
+}
+#campusLocation {
+    font-size: 16px;
+    padding: 5px;
+    cursor: pointer;
+}
+#spinner{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+#spinnerImage{
+    background-color: transparent;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    animation: spin 2s linear infinite;
+}
+
+/*For  the Result window*/
+.Container{
+    background-color: #ffffff;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    min-width: 200px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

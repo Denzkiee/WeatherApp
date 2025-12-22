@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papasok ba ako?</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div id="header">
+    <header> ICCT CAMPUS WEATHER CHECKER</header>
+    </div>
+
+    <div id="contentBody">
+        <div >
+        <form action="" id="checkerForm">
+            <label for="campusLocation">Enter Campus</label>
+            <select name="campus" id="campusLocation">
+                <option value="" disabled selected>Select campus</option>
+                <option value="Antipolo">Antipolo</option>
+                <option value="Cainta">Cainta</option>
+                <option value="Binangonan">Binangonan</option>
+                <option value="Taytay">Taytay</option>
+                <option value="San Mateo">San Mateo</option>
+                <option value="Cogeo">Cogeo</option>
+            </select>
+            <button type="submit" id="submit">Check</button>
+        </form>
+        
+    </div>
+    <div class="Container" id="resultContainer" >
+        <h2 id="resultMessage">OUTPUT</h2>
+        <ul style="text-align: left">
+            <li id="Area">City/Area: </li>
+            <li id="Temperature">Temperature (C): </li>
+            <li id="Weather">Weather Condition: </li>
+            <li id="Feels">Feels like: </li>
+            <li id="Chance">Chance of rain: </li>
+            <li id="UV">UV index: </li>
+            <li id="Visibility">Visibility: </li>
+        </ul>
+    </div>
+
+
+
+
+
+<!--Spinner/LoadingScreen-->
+
+     <div id="spinner" style="display: none;">
+        <img id="spinnerImage" src="img/spinner2.png" alt="spinner">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
